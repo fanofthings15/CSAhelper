@@ -1,7 +1,12 @@
 body {
     font-family: 'Share Tech Mono';font-size: 22px;
     background-color:#121212;
-    }
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
 
 h1 {
     text-align: center;
@@ -19,7 +24,7 @@ h1 {
         width: 25%;
         height: 120%;
         float: left;
-        border-radius: 7px 7px 0 0;
+        border-radius: 7px 7px 7px 7px;  /*was 7px 7px 0 0.       7 7 7 7 cause the highlight line to have dips but has better trasition out of man tab*/
         border: none;
         outline:none;
         cursor: pointer;
