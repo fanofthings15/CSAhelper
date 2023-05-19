@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSAhelper</title>
+<meta charset="UTF-8">
+<meta name="CSAHelper" content=" Helper For FIRST CSA'S">.
+<meta name="Fan">
+<link rel="stylesheet" type="text/css" href="css.css">
+
+<link href='https://fonts.googleapis.com/css?family=Share Tech Mono' rel='stylesheet'>
+
+</head>
+    <body >
+        <div class="TopBar">
+            <a class="CodeLink" href="#">>_</a>
+            <div class="title"> <span style="color: orangered">CSA</span> <span style="color: white">Helper</span> </div>
+            <a href="https://github.com/fanofthings15/CSAhelper"><img class="GITLink" src="img/GitIcos.png" alt="Git"></a>
+        </div>
+
+        <div class="tabContainer">
+            <div class="buttonContainer">
+                <button onclick="showPanel(0,'#662D91')">DS/RoboRIO</button>
+                <button onclick="showPanel(1,'#f25a29')">REV</button>
+                <button onclick="showPanel(2,'rgb(101 157 6)')">CTRE</button>
+                <button onclick="showPanel(3,'#0066B3')">Known Issuses</button>
+            </div>
+
+<div class="tabPanel" id="DS/ROBORIO">
+    <div class="SubnetsCon">
+        <p>IP Address Subnets</p>
+        <table cellpadding="0" cellspacing="0" class="led-table">
+            <tr>
+                <td>
+                    <table class="section-table">
+                        <tr>
+                            <td width="125">Team 1</td>
+                            <td>10.0.1.x</td>
+                        </tr>
+                        <tr>
+                            <td>Team 12</td>
+                            <td>10.0.12.x</td>
+                        </tr>
+                        <tr>
+                            <td>Team 123</td>
+                            <td>10.1.23.x</td>
+                        </tr>
+                        <tr>
+                            <td>Team 1234</td>
+                            <td>10.12.34.x</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="IpAdressCon">
+        <p>IP Addresses</p>
+            <table cellpadding="0" cellspacing="0" class="text-table">
+                <tr>
+                    <td>
+                        <table class="section-table">
+                            <tr>
+                                <td width="225">Robot Radio</td>
+                                <td>10.TE.AM.1</td>
+                            </tr>
+                            <tr>
+                                <td>roboRIO</td>
+                                <td>10.TE.AM.2</td>
+                            </tr>
+                            <tr>
+                                <td>roboRIO USB</td>
+                                <td>172.22.11.2</td>
+                            </tr>
+                            <tr>
+                                <td>roboRIO Name</td>
+                                <td>roborio-TEAM-frc.local</td>
+                            </tr>
+                            <tr>
+                                <td>Field AP</td>
+                                <td>10.TE.AM.4</td>
+                            </tr>
+                            <tr>
+                                <td>Driver Station</td>
+                                <td>10.TE.AM.5</td>
+                            </tr>
+                            <tr>
+                                <td>(subnet 255.0.0.0)</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div class="HelpFullCon">
+        <p>Helpful Commands</p>
+        <table cellpadding="0" cellspacing="0" class="Helpfull-table">
+                <tr>
+                    <td>
+                        <table class="section-table">
+                            <tr>
+                                <td width="225">ncpa.cpl</td>
+                                <td>Network adapters</td>
+                            </tr>
+                            <tr>
+                                <td>firewall.cpl</td>
+                                <td>Windows firewall</td>
+                            </tr>
+                            <tr>
+                                <td>ipconfig</td>
+                                <td>Show network settings</td>
+                            </tr>
+                            <tr>
+                                <td>ipconfig /release</td>
+                                <td>Release DHCP address</td>
+                            </tr>
+                            <tr>
+                                <td>ipconfig /renew</td>
+                                <td>Acquire DHCP address</td>
+                            </tr>
+                            <tr>
+                                <td>ping 10.TE.AM.255</td>
+                                <td>Scans network</td>
+                            </tr>
+                            <tr>
+                                <td>arp -a</td>
+                                <td>Shows reachable IPs</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+    </div>
+    <div class="RadioLightCon">
+        <p>Robot Radio Lights</p>
+        <table cellpadding="0" cellspacing="0" class="ds-Table-four">
+        <tr>
+            <td>
+                <table class="section-table">
+                    <tr>
+                        <td colspan="2" class="bold">Power</td>
+                    </tr>
+                    <tr>
+                        <td class="blue led">&nbsp;</td>
+                        <td>(blinking) Powering Up</td>
+                    </tr>
+                    <tr>
+                        <td class="blue led">&nbsp;</td>
+                        <td>Powered Up</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="section-table">
+                    <tr>
+                        <td colspan="2" class="bold">Wifi</td>
+                    </tr>
+                    <tr>
+                        <td class="led">Off</td>
+                        <td>Needs Programming</td>
+                    </tr>
+                    <tr>
+                        <td class="red led">&nbsp;</td>
+                        <td>AP, unlinked</td>
+                    </tr>
+                    <tr>
+                        <td class="orange led">&nbsp;</td>
+                        <td>AP, linked</td>
+                    </tr>
+                    <tr>
+                        <td class="green led">&nbsp;</td>
+                        <td>Bridge mode, linked</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <div class="RoboRIOCon">
+        <p>RoboRIO Lights</p>
+    <table cellpadding="0" cellspacing="0" class="ds-Table-five">
+            <tr>
+                <td>
+                    <table class="section-table">
+                        <tr>
+                            <td colspan="2" class="bold">Power</td>
+                        </tr>
+                        <tr>
+                            <td class="green led">&nbsp;</td>
+                            <td>OK</td>
+                        </tr>
+                        <tr>
+                            <td class="orange led">&nbsp;</td>
+                            <td>Brownout</td>
+                        </tr>
+                        <tr>
+                            <td class="red led">&nbsp;</td>
+                            <td>Fault, check for short</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <table class="section-table">
+                        <tr>
+                            <td colspan="2" class="bold">Status</td>
+                        </tr>
+                        <tr>
+                            <td class="led">(Off)</td>
+                            <td>OK</td>
+                        </tr>
+                        <tr>
+                            <td class="orange led">&nbsp;</td>
+                            <td>Re-image</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <table class="section-table">
+                        <tr>
+                            <td colspan="2" class="bold">Radio</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="led">Ignore</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <table class="section-table">
+                        <tr>
+                            <td colspan="2" class="bold">Comm</td>
+                        </tr>
+                        <tr>
+                            <td class="led">(Off)</td>
+                            <td>No Comms</td>
+                        </tr>
+                        <tr>
+                            <td class="red led">&nbsp;</td>
+                            <td>(solid) Comms, no code</td>
+                        </tr>
+                        <tr>
+                            <td class="red led">&nbsp;</td>
+                            <td>(blinking) E-Stop</td>
+                        </tr>
+                        <tr>
+                            <td class="green led">&nbsp;</td>
+                            <td>OK</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <table class="section-table">
+                        <tr>
+                            <td colspan="2" class="bold">Mode</td>
+                        </tr>
+                        <tr>
+                            <td class="led">(Off)</td>
+                            <td>Disabled</td>
+                        </tr>
+                        <tr>
+                            <td class="orange led">&nbsp;</td>
+                            <td>Auto</td>
+                        </tr>
+                        <tr>
+                            <td class="green led">&nbsp;</td>
+                            <td>Teleop</td>
+                        </tr>
+                        <tr>
+                            <td class="red led">&nbsp;</td>
+                            <td>Test</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+            <div class="tabPanel">
+                Content: REV
+            </div>
+
+            <div class="tabPanel">
+                Content: CTRE
+            </div>
+
+            <div class="tabPanel">
+                Content: Known Issuses
+            </div>
+        </div>
+
+        <script src="Tabs.js"></script>
+    </body>
+</html>
