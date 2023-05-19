@@ -4,27 +4,83 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin: 0px;
     overflow: hidden;
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0;
+    user-select: none;
 }
 
-h1 {
-    text-align: center;
+.TopBar{
+    width: 100%;
+    height: 150px;
     color:rgba(255, 255, 255, 0.658);
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.TopBar .CodeLink{
+    position: absolute;
+    top:36px;
+    left:40px;
+    box-sizing: border-box;
+    width: 75px;
+    height: 75px;
+    text-decoration: none;
+    text-align: left;
+    vertical-align: top;
+    font-size: 25px;
+    background-color:rgba(255, 255, 255, 0.062);
+    color: green;
+    padding-left: 2px;
+    padding-top: -2px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 7px 7px 7px 7px;
+    border-color: rgba(0, 0, 0, 0.29);
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color:rgba(255, 255, 255, 0.253);
+}
+
+.TopBar .title{
+    margin: auto;
+    margin-top: 50px;
+    font-size: 300%;
+    text-align: center;
+}
+
+.GITLink{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top:36px;
+    right:36px;
+    box-sizing: border-box;
+}
+
 
 .tabContainer{
-        width: 100%;
-        height: 750px;
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+        height: 77.5%;
+        position: absolute;
+        top: 150px;
     }
+
 .tabContainer .buttonContainer{
         height: 8%;
+        border-radius: 7px 7px 7px 7px; 
     }
+
 .tabContainer .buttonContainer button{
         width: 25%;
         height: 120%;
         float: left;
-        border-radius: 7px 7px 7px 7px;  /*was 7px 7px 0 0.       7 7 7 7 cause the highlight line to have dips but has better trasition out of man tab*/
+        border-radius: 7px 7px 7px 7px;
         border: none;
         outline:none;
         cursor: pointer;
@@ -34,9 +90,11 @@ h1 {
         background-color:rgba(255, 255, 255, 0.164);
         color: white;
     }
+
 .tabContainer .buttonContainer button:hover{
     background-color:rgba(255, 255, 255, 0.274);
     }
+
 .tabContainer .tabPanel{
         height: 100%;
         background-color:#121212;
@@ -47,4 +105,144 @@ h1 {
         font-family: 'Share Tech Mono';
         font-size: 22px;
         display: none;
+        border-radius: 0px 0px 7px 7px;
     }
+
+/* ds/roborio content */
+.led-table td {
+    border: 2px solid white;
+}
+.led-table {
+    border-collapse: collapse;
+    width: 325px;
+}
+.text-table {
+    border-collapse: collapse;
+    width: 501px;
+}
+.text-table td {
+    border: 2px solid white;
+}
+.ds-Table-four{
+    border-collapse: collapse;
+    width: 327px;
+}
+.ds-Table-four td{
+    border: 2px solid white;
+}
+.ds-Table-five{
+    border-collapse: collapse;
+    width: 335px;
+}
+.ds-Table-five td{
+    border: 2px solid white;
+}
+.Helpfull-table {
+    border-collapse: collapse;
+    width: 501px;
+    user-select:text;
+}
+.Helpfull-table td{
+    border: 2px solid white;
+}
+.section-table td {
+    border: 0;
+    vertical-align: top;
+}
+.bold {
+    font-weight: bold;
+}
+.blue {
+    background-color: blue;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: white;
+}
+.red {
+    background-color: red;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: white;
+}
+.orange {
+    background-color: orange;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: white;
+}
+.green {
+    background-color: green;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: white;
+}
+.led {
+    width: 50px;
+}
+
+
+.SubnetsCon{
+    position: absolute;
+    top: 12%;
+    left: 1% ;
+    text-align: left;
+    padding: 0px;
+    margin: 2px;
+}
+.SubnetsCon > p{
+    margin: 0;
+}
+
+
+.IpAdressCon{
+    position: absolute;
+    top: 36%;
+    left: 1% ;
+    text-align: left;
+    padding: 0px;
+    margin: 2px;
+}
+
+.IpAdressCon > p{
+    margin: 0;
+}
+
+
+.HelpFullCon{
+    position: absolute;
+    top: 72%;
+    left: 1% ;
+    text-align: left;
+    padding: 0px;
+    margin: 2px;
+}
+.HelpFullCon > p{
+    margin: 0;
+}
+
+.RadioLightCon{
+    position: absolute;
+    top: 12%;
+    left: 29%;
+    text-align: left;
+    padding: 0px;
+    margin: 2px;
+}
+.RadioLightCon > p{
+    margin: 0;
+}
+
+.RoboRIOCon{
+    position: absolute;
+    top: 15%;
+    left: 48%;
+    text-align: left;
+    padding: 0px;
+    margin: 2px;
+}
+
+.RoboRIOCon > p{
+    margin: 0;
+}
+
+
